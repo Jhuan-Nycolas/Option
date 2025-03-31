@@ -13,11 +13,11 @@
     devShells.${system} = {
       default = pkgs.mkShell {
         packages = [
-          pkgs.flutter
-          pkgs.dart
+          pkgs.yarn
+          pkgs.nodejs
         ];
    
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Option Project DevShell Activated; exec fish";
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Option Project; exec fish";
       };
     };
   };
