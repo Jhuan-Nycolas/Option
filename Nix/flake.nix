@@ -13,7 +13,8 @@
     devShells.${system} = {
       default = pkgs.mkShell {
         packages = [
-          pkgs.yarn
+          pkgs.wails
+          pkgs.go
           pkgs.nodejs
         ];
    
