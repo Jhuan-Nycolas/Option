@@ -14,6 +14,7 @@
       default = pkgs.mkShell {
         packages = [
           pkgs.jdk
+          pkgs.gradle
         ];
 
         shellHook = "clear";
