@@ -16,7 +16,7 @@
           pkgs.jdk
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Option Project; exec fish";
+        shellHook = "clear";
       };
     };
   };
