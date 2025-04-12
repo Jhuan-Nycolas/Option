@@ -13,11 +13,11 @@
     devShells.${system} = {
       default = pkgs.mkShell {
         packages = [
-          pkgs.jdk
-          pkgs.gradle
+          pkgs.dotnet-sdk_9
+          pkgs.dotnet-runtime_9
         ];
 
-        shellHook = "clear";
+        shellHook = "clear; exec nu";
       };
     };
   };
